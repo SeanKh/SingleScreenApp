@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:fillViewport="true">
+<LinearLayout
+
+    style="@style/linearlayout"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.myfirstapp.MainActivity">
+
+    <ImageButton
+        style="@style/imagebutton"
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/google_icon"
+        android:layout_marginTop="@dimen/text_margin_top"
+        />
+
+    <ImageView
+
+        style="@style/googleImage"
+        android:id="@+id/lidl_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/banner_height"
+        android:src="@drawable/g"
+        />
+
+    <TextView
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        style="@style/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text"
+        android:textSize="@dimen/text_size"
+        android:paddingTop="20dp"
+        android:layout_marginTop="4dp"
+        />
+
+    <LinearLayout
+        style="@style/linearlayout_below"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+
+
+        >
+        <RelativeLayout
+            style="@style/rel_lay"
+            android:layout_width="@dimen/rel_text_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                style="@style/text_description"
+                android:id="@+id/adres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adres"
+                android:drawableLeft="@drawable/icon_location"
+                android:paddingTop="@dimen/banner_text_padding_top"
+                android:textSize="@dimen/banner_text_text_size"
+                android:autoLink="map"
+                android:linksClickable="true"
+                android:textColorLink="@android:color/white"
+                />
+            <TextView
+                style="@style/text_description"
+                android:id="@+id/web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/web"
+                android:drawableLeft="@drawable/earth"
+                android:layout_below="@id/adres"
+                android:paddingTop="@dimen/banner_text_padding_top"
+                android:textSize="@dimen/banner_text_text_size"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:textColorLink="@android:color/white"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/rel_lay"
+            android:layout_width="@dimen/rel_text_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+
+            >
+            <TextView
+                style="@style/text_description"
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/email"
+                android:text="@string/mail"
+                android:paddingTop="@dimen/banner_text_padding_top"
+                android:textSize="@dimen/banner_text_text_size"
+                android:autoLink="email"
+                android:linksClickable="true"
+                android:textColorLink="@android:color/white"
+                />
+            <TextView
+                style="@style/text_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/phone"
+                android:text="@string/phone"
+                android:layout_below="@id/mail"
+                android:paddingTop="@dimen/banner_text_padding_top"
+                android:textSize="@dimen/banner_text_text_size"
+                android:autoLink="phone"
+                android:linksClickable="true"
+                android:textColorLink="@android:color/white"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

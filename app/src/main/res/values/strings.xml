@@ -1,0 +1,10 @@
+    <resources>
+        <string name="app_name">My first App</string>
+        <string name="text">The place, where you can find everything</string>
+        <string name="adres">620 Eighth Avenue New York, NY 10018</string>
+        <string name="web">www.google.com</string>
+        <string name="mail">client@google.com</string>
+        <string name="phone">7840787878</string>
+    </resources>
+
+
